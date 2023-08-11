@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import ShoppingCart from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
 
 export const MuiNavBar = () => {
   return (
@@ -38,10 +39,10 @@ export const MuiNavBar = () => {
         />
         <Stack direction={"row"}>
           <StyledEngineProvider injectFirst>
-            <Button className="muiButton" variant="text" color="inherit">
+            <Button className="muiButton" variant="text" color="inherit" href='/login'>
               Login
             </Button>
-            <Button className="muiButton" variant="text" color="inherit">
+            <Button className="muiButton" variant="text" color="inherit" href ='/signup'>
               Sign Up
             </Button>
           </StyledEngineProvider>
