@@ -1,12 +1,15 @@
-import "./App.css";
-import { Typography } from "@mui/material";
+import { MuiNavBar } from "./components/NavBar/MuiNavBar";
 
 function App() {
   return (
     <div className="App">
-      <Typography variant="h4" color="cyan">
-        upGrad E-Shop
-      </Typography>
+      <MuiNavBar />
+      {/* <Routes>
+        <Route path="/" component={<Home />} />
+        <Route path="/login" component={<Login />} />
+        <Route path="/signup" component={<SignUp />} />
+        <Route path="/products" component={<Products />} />
+      </Routes> */}
     </div>
   );
 }
